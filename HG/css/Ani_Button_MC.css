@@ -1,0 +1,40 @@
+.animated-border-button {
+    background-color: darkseagreen;
+    border: none;
+    color: #ffffff;
+    outline: none;
+    padding: 24px 80px 20px;
+    position: relative;
+    font-family:"HarmonyOS Sans SC Regular";
+    font-size: 16px;
+  }
+  
+  .animated-border-button:before,
+  .animated-border-button:after {
+    border: 0 solid transparent;
+    transition: all 0.3s;
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 48px;
+  }
+  
+  .animated-border-button:before {
+    border-top: 2px solid green;
+    right: 0;
+    top: -8px;
+  }
+  
+  .animated-border-button:after {
+    border-bottom: 2px solid greenyellow;
+    bottom: -8px;
+    left: 0;
+  }
+  
+  .animated-border-button:hover:before,
+  .animated-border-button:hover:after {
+    width: 100%;
+  }
+  
+  
+  

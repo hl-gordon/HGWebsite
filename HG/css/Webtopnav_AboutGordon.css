@@ -1,0 +1,37 @@
+.topnav {
+    overflow: hidden;
+    background-color: #FFFFFF;
+    position: fixed;
+      top: 0;
+      width: 100%;
+      line-height: 0;
+  }
+   
+  /* 导航链接 */
+  .topnav a {
+    float: left;
+    display:block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  @media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+   
+  /* 链接 - 修改颜色 */
+  .topnav a:hover {
+    background-color: rebeccapurple;
+    color: white;
+  }
+  .active {
+    background-color: #FF00FF ;
+  }
+  ul{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top:0;
+  }
+  ul.topnav li {float: left;}

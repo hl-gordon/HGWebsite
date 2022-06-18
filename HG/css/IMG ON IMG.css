@@ -1,0 +1,8 @@
+.a{
+    position: absolute;
+    z-index: 1;
+}
+.b{
+    position: absolute;
+    z-index: 2;
+}

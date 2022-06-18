@@ -1,0 +1,55 @@
+Perbutton:
+EN:
+Link it then you can use it on your website.
+Link it: <link rel="stylesheet" href="./css/PerButton.css">
+Then class your button: 
+<div class="box">
+	<button class="btn">ClickMe</button>
+</div>
+简体中文:
+链接它然后你就可以在你的网站上使用了。
+链接它: <link rel="stylesheet" href="./css/PerButton.css">
+然后class你的按钮:
+<div class="box">
+	<button class="btn">ClickMe</button>
+</div>
+Webtopnav_AboutGordon:
+EN:This is my website of topnav,it's different from default topnav.
+Link it then you can use it on your website.
+Link it (Html): <link rel="stylesheet" href="./css/Webtopnav_AboutGordon.css">
+Then class it in div.
+<div class="topnav">
+	<a href="iosc.html">LOL</a>
+</div>
+Webtopnav_AboutGordon:
+简体中文:这是我网站的导航栏,不同于一般导航栏
+链接它你就就可以在你的网站上使用了。
+链接它(Html): <link rel="stylesheet" href="./css/Webtopnav_AboutGordon.css">
+这是div的class.
+<div class="topnav">
+	<a href="iosc.html">LOL</a>
+</div>
+iosc:
+No-information
+font:
+EN:More Beautiful Fonts!Such as HarmonyOS SC,Cascadia Code
+<Link> it: <link rel="stylesheet" href="./css/font.css">
+Then <class> it in <div>
+<div class="BasicFont">
+<p>BasicFont</p>
+</div>
+<div class="CodeFont">
+<p>print('Hello World!')</p>
+</div>
+Card:
+CN:一个可以翻转的卡片CSS
+<link>: <link rel="stylesheet" href="./css/Card.css">
+然后在 div 里 class 它
+<div class="card">
+  <div class="card-side front">
+    <div>Front Side</div>                    <--输入文字要用div
+  </div>
+  <div class="card-side back">
+    <div>Back Side</div>
+  </div>
+</div>
