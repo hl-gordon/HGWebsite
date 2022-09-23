@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh_CN">
+  <head>
+    <!-- Required meta tags -->
+    <title>GAMEBANANA 国内下载</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/CodePen_Index_2.css">
+    <link rel="stylesheet" type="text/css" href="./css/CSSButton.css">
+    <style>
+       h1,h2,h3,h4,h5,h6,span,div,p {
+                font-family:思源宋体 CN;
+                color:white;
+            }
+            body{
+              background-color: black;
+            }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div class="container">
+          <a href="./Menu.html">主页</a>
+          <a href="./update.html">上传</a>
+          <a class="active" href="./about.html">关于</a>
+          <a href="javascript:void(0);" class="icon" onclick="resTopNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg">
+      </div>
+
+      <div class="navbar" id="myNavbar">
+        <div class="container">
+          <a href="./Menu.html">主页</a>
+          <a href="./update.html">上传</a>
+          <a class="active" href="./about.html">关于</a>
+
+          <a href="javascript:void(0);" class="icon" onclick="resNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="container">
+      <div class="headline">
+        
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="crap">
+        <div style="padding:15px 15px 2500px">
+          <!-- What the fuck is crap? -->
+            <h1>特殊文件打开方式</h1>
+            <hr/>
+            <p> 1.下载 bandizip</p>
+            <p> 2.下载所有文件(例如下载 STEAM - 1 就必须下载 STEAM - 2)</p>
+            <p> 3.将.txt文件改为.z01(分卷文件)</p>
+            <p> 4.点击zip/rar/7z,这些一般是主文件,点击主文件即可自动关联分卷文件</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 600) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-70px";
+        }
+      }
+
+      function resTopNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      function resNav() {
+        var y = document.getElementById("myNavbar");
+        if (y.className === "navbar") {
+          y.className += " responsive";
+        } else {
+          y.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>

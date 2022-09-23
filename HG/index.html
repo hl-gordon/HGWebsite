@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh_CN">
+  <head>
+    <!-- Required meta tags -->
+    <title>这里是hl-gordon的网页哦~</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/CodePen_Index.css">
+    <link rel="stylesheet" type="text/css" href="./css/CSSButton.css">
+    <style>
+       h1,h2,h3,h4,h5,h6,span,div,p {
+                font-family:思源宋体 CN;
+            }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="topnav" id="myTopnav">
+        <div class="container">
+          <a class="active" href="">主页</a>
+          <a href="./join_us.html">加入群组</a>
+          <a href="./ban_and_guide.html">封禁名单</a>
+          <a href="./morepages.html">更多页面</a>
+          <a href="./about.html">关于</a>
+          <a href="./link.html">友情链接</a>
+          <a href="javascript:void(0);" class="icon" onclick="resTopNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg">
+      </div>
+
+      <div class="navbar" id="myNavbar">
+        <div class="container">
+          <a class="active" href="">主页</a>
+          <a href="./join_us.html">加入群组</a>
+          <a href="./ban_and_guide.html">封禁名单</a>
+          <a href="./morepages.html">更多页面</a>
+          <a href="./about.html">关于</a>
+          <a href="./link.html">友情链接</a>
+          <a href="javascript:void(0);" class="icon" onclick="resNav()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+    </header>
+
+    <div class="container">
+      <div class="headline">
+        <img src="./img/HGICON.png" style="width:200PX;height:200PX;">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="crap">
+        <div style="padding:15px 15px 2500px">
+          <!-- What the fuck is crap? -->
+          <div style="text-align:center"> <!-- align被取消了哦... 只能用这个CSS了 -->
+            <p style="font-size:32px;">是一个 Sven co-op UP主</p>
+            <a target="_blank" href="https://space.bilibili.com/609564139">
+              <button class="button">点击这里转到我的 Bilibili 个人主页!</button>
+            </a>
+          </div>
+          <hr>
+          <h1>公告</h1>
+          <p>无</p>
+          <hr>
+          <h1>往期的视频</h1>
+          <p>S v e n   C h a t</p>
+          <iframe src="//player.bilibili.com/player.html?aid=644261051&bvid=BV1MY4y1A7Qn&cid=796712230&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <p>W A S T E D</p>
+          <iframe src="//player.bilibili.com/player.html?aid=729464450&bvid=BV1AS4y1x78J&cid=800804958&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <hr>
+          <h1>最近有在玩的游戏</h1>
+          <p>·Gmod - Steam版本，带创意工坊 经常玩</p>
+          <p>·MineCraft - 国际基岩版1.19、网易基岩版、国际Java版1.18.2</p>
+          <p>·Sven co-op - 跟其他人一起联机</p>
+          <p>·Half life - 直播的时候玩两下</p>
+          <hr>
+          <h1>公告!</h1>
+          <h2>悲报 (；д；)   [发布时间 2022年 8月 31日 - 星期三 - 水曜日]</h2>
+          <p>因学业问题每一周有几率更新几次...那得看看整活怎么样了...</p>
+          <p>初二了啊!! (；´д｀)ゞ</p>
+          <hr>
+          <h1>自己写的一些小文章~~~</h1>
+          <p>还没有...</p>
+          <hr>
+          <h1>大制作!(大概) </h1>
+          <p>没有</p>
+          <br>
+          <div style="text-align:center;">
+          <h1>更多的信息请移步我的个人信息!</h1>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      // When the user scrolls down 20px from the top of the document, slide down the navbar
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 600) {
+          document.querySelector(".navbar").style.top = "0";
+        } else {
+          document.querySelector(".navbar").style.top = "-70px";
+        }
+      }
+
+      function resTopNav() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+
+      function resNav() {
+        var y = document.getElementById("myNavbar");
+        if (y.className === "navbar") {
+          y.className += " responsive";
+        } else {
+          y.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
