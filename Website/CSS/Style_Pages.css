@@ -17,15 +17,13 @@ hr{
     margin-top:14px;
     margin-LEFT:-1%;
     margin-right:-0.5%;
-    padding-bottom:720px;
-    background-color: rgb(0, 0, 0);
-    background-image: url(../Img/WD.png);
-    background-size: 100%;
+    padding-bottom:360px;
+    background-color: black;
 }
 .font_toppage{
    position: absolute;
-   left:0%;
-   top:30%;
+   left:5%;
+   top:120px;
    color: #FFF;
    font-size:24px;
 }
@@ -96,28 +94,3 @@ a:hover{
     color: rgb(1, 68, 119);
     text-decoration: none;
 }
-
-.button {
-    background-color: blueviolet; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    font-family: MiSans;
-  }
-
-  .button:hover {
-    background-color: blueviolet; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-    font-family: MiSans;
-  }
