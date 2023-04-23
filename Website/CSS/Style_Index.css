@@ -4,21 +4,21 @@
 }
 
 body{
-    background-color: lightgray;
+    background-color: rgb(11, 0, 90);
     font-family: MiSans;
 }
 p{
     font-size:20px;
 }
 hr{
-    border:2px solid black;
+    border:2px solid #fff;
 }
 .toppage{
     margin-top:14px;
     margin-LEFT:-1%;
     margin-right:-0.5%;
     padding-bottom:720px;
-    background-color: rgb(0, 0, 0);
+    background-color: #000;
     background-image: url(../Img/WD.png);
     background-size: 100%;
 }
@@ -37,7 +37,7 @@ hr{
     padding-left:5%;
     padding-right:5%;
     padding-top:3%;
-    background-color:#fff;
+    background-color: rgb(43, 43, 43);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     z-index:2;
 }
@@ -46,16 +46,18 @@ hr{
 ul {
     list-style-type: none;
     margin-top: 0%;
-    margin-LEFT:-1%;
-    margin-right:-0.5%;
     padding-bottom:auto;
     position: fixed;
-    top: 0;
-    width: 100%;
+    top: 15;
+    left: 2%;
+    border-radius:8px;
+    right: 2%;
     overflow: hidden;
     z-index:999;
-    border: 1px solid #e7e7e7;
-    background-color: #f3f3f3;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
 }
 
 li {
@@ -66,19 +68,15 @@ li {
 
 li a {
     display: block;
-    color: #666;
+    color: #fff;
     text-align: center;
-    padding: 14px 16px;
+    padding: 1rem 0.75rem;
     text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: lightblue;
 }
 
 li a.active {
     color: white;
-    background-color: blue;
+    background-color: rgba(0, 149, 255, 0.5);
 }
 
 li .r {
@@ -88,12 +86,13 @@ li .r {
 }
 
 a {
-    color: rgb(0, 131, 231);
+    color: white;
     text-decoration: none;
 }
 
 a:hover{
-    color: rgb(1, 68, 119);
+    color: white;
+    background-color: rgba(0, 149, 255, 0.2);
     text-decoration: none;
 }
 
