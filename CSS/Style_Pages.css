@@ -1,0 +1,101 @@
+@font-face {
+    font-family: MiSans;
+    src: url(../Fonts/MiSans-Regular.ttf);
+}
+
+body{
+    background-color: grey;
+    font-family: MiSans;
+}
+p{
+    font-size:20px;
+}
+hr{
+    border:2px solid white;
+}
+.toppage{
+    margin-top: -1%;
+    margin-LEFT:-1%;
+    margin-right:-0.5%;
+    padding-bottom:360px;
+    background-color: #000;
+}
+.font_toppage{
+   position: absolute;
+   left:5%;
+   top:120px;
+   color: #FFF;
+   font-size:24px;
+}
+.textpage{
+    margin-top:-50px;
+    margin-LEFT:3%;
+    margin-right:3%;
+    padding-bottom:auto;
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:3%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    z-index:2;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-top: 2rem;
+    padding-bottom:auto;
+    position: fixed;
+    top: 15;
+    left: 2%;
+    border-radius:8px;
+    right: 2%;
+    overflow: hidden;
+    z-index:999;
+    background: rgba(0, 0, 0, 0.367);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow:inset 0 0 6px rgba(255, 255, 255, 0.2);
+}
+
+li {
+    float: left;
+    z-index:999;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0.75rem;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: #fff;
+    background-color: rgba(0, 192, 192, 0.303);
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+    background-color: rgba(0, 163, 163, 0.521);
+}
+
+li .r {
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: none;
+}
