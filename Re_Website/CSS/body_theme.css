@@ -8,22 +8,26 @@
     src: url(../FONT/LXGWNeoXiHei.ttf);
 }
 
+@font-face {
+    font-family: BrunoAce;
+    src: url(../FONT/BrunoAceSC-Regular.ttf);
+}
+
 body{
     font-family:TexFont , LXGW; /*应用字体*/
+    overflow-x: hidden;
 }
 
  /*导航栏*/
 .NX_Topbar{
     background-color: white;
     box-shadow: 0px 5px 5px #888888;
-    margin-left: -1%;
-    margin-right: 100%;
+    margin-left: -1rem;
+    margin-right: 101%;
     position: fixed;
     z-index: 9999999999;
-    white-space: nowrap;
     padding-right: 101%;
-    margin-top: -1%;
-    float: left;
+    margin-top: -1rem;
     display: flex;
 }
 
@@ -33,7 +37,7 @@ body{
     margin-left: 2rem;
     overflow: hidden;
     display: flex;
-    font-size: 15px;
+    font-size: 15px;    
     white-space: nowrap;
     color: black;
     transition:color 0.4s;   
@@ -49,8 +53,8 @@ body{
     padding-bottom: 0.003rem;
     padding-left: 2rem;
     overflow: hidden;
-    margin-left: auto;
     display: flex;
+    display: -webkit-flex;
     font-size: 15px;
     white-space: nowrap;
     color: blue;
@@ -70,7 +74,7 @@ body{
     background-attachment: fixed;
 
     margin-left: -1%;
-    margin-right: -0.5%;
+    margin-right: calc(100% - 100vw);
     padding-bottom: 720px;
 
     min-width: 100vh;
@@ -81,9 +85,7 @@ body{
 .NX_TopFont{
     position: absolute;
     left:1rem;
-    margin-top:20rem;
     font-size:24px;
-    line-height: 5%;
     animation: Fade_Top 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -93,11 +95,11 @@ body{
 @keyframes Fade_Top {
     0%{
         color: #ffffff00;
-        margin-top:22rem;
+        margin-top:20rem;
     }
     100%{
         color: #ffffff;
-        margin-top:20rem;
+        margin-top:15rem;
     }
 }
 
@@ -105,16 +107,21 @@ body{
 .NX_LeftImp{
     margin-top:25rem;
     margin: 1rem;
-    padding: 1rem 4rem;
+    margin-left:6rem;
+    padding: 1rem 1rem;
+    padding-right: 114514rem;
     background-image: url();
     box-shadow: 0px 5px 5px #000;
-    border-radius: 4%;
+
+    width: 100%;
 
     display: inline;
     float: left;
 
     background-repeat: no-repeat;
     background-clip: padding-box;
+
+    transition:margin-left 0.3s;
     
     z-index: 4;
 }
@@ -122,7 +129,7 @@ body{
 a{text-decoration: none;}
 
 .NX_LeftImp:hover{
-    box-shadow: inset 5px 5px 5px #888;
+    margin-left:-1rem;
 }
 
 .NX_LeftImp_Font{
@@ -132,9 +139,18 @@ a{text-decoration: none;}
 }
 
 .NX_FloatLeft{
+    position: absolute;
     float: left;
     width: 75%;
     margin-left: 1rem;
+}
+
+.NX_FloatRight{
+    position: relative;
+    float: right;
+    width: 25%;
+    margin-left: 1rem;
+    white-space:nowrap;
 }
 
 .NX_Border1 /*横幅*/{

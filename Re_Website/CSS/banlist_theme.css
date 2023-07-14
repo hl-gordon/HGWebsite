@@ -10,7 +10,10 @@
 
 body{
     font-family:TexFont , LXGW; /*应用字体*/
+    font-size: 20px;
 }
+
+a{text-decoration: none;}
 
  /*导航栏*/
 .NX_Topbar{
@@ -37,6 +40,7 @@ body{
     white-space: nowrap;
     color: black;
     transition:color 0.4s;   
+
 }
 
 .NX_Lobby:hover{
@@ -63,7 +67,7 @@ body{
 
 /* 头图(Header) */
 .NX_TopZone{
-    background-image: url(../IMG/BG_IMAGE/2.png);
+    background-color: red;
     background-repeat:no-repeat;
     background-size:cover;
     background-clip: padding-box;
@@ -71,7 +75,7 @@ body{
 
     margin-left: -1%;
     margin-right: -0.5%;
-    padding-bottom: 720px;
+    padding-bottom: 15rem;
 
     min-width: 100vh;
     
@@ -79,27 +83,14 @@ body{
 }
 
 .NX_TopFont{
-    position: absolute;
+    position: relative;
     left:1rem;
-    margin-top:20rem;
+    margin-top:5rem;
     font-size:24px;
-    line-height: 5%;
-    animation: Fade_Top 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+    clear: both;
+    color: #FFF;
 }
 
-
-@keyframes Fade_Top {
-    0%{
-        color: #ffffff00;
-        margin-top:22rem;
-    }
-    100%{
-        color: #ffffff;
-        margin-top:20rem;
-    }
-}
 
 /*文章区域*/
 .NX_LeftImp{
@@ -116,10 +107,9 @@ body{
     background-repeat: no-repeat;
     background-clip: padding-box;
     
-    z-index: 4;
-}
 
-a{text-decoration: none;}
+    z-index: 20;
+}
 
 .NX_LeftImp:hover{
     box-shadow: inset 5px 5px 5px #888;
@@ -131,6 +121,11 @@ a{text-decoration: none;}
     width: auto;
 }
 
+.NX_FloatLeft{
+    float: left;
+    width: 75%;
+    margin-left: 1rem;
+}
 
 .NX_PostCard{
     width: 90%;
